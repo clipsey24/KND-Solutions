@@ -1,4 +1,4 @@
 KND
 ===
 
-Knowledge
+KND Solutions
