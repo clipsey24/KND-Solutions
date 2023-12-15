@@ -19,26 +19,44 @@
 <body>
   <div id="container">
   <div class="bg-dark-subtle text-emphasis-dark">
-    <img src="static/background.jpg" align="left" height="60px">
+   <!-- <img src="static/background.jpg" align="left" height="60px">-->
     <h1 class="text-center mt2">KND Solutions</h1>
   <br>
     
-  <img src="/static/background2.jpg" height="320" width="100%" object-fit="strech">
+  <img class="img-fluid" src="/static/background2.jpg" height="320" width="100%" object-fit="strech">
   <br>
   </div>
   <h2 class="text-center mt-2">About KND Solutions</h2>
   <br>
   
-  <p class="p-3 mb-2 bg-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas sed. Neque viverra justo nec ultrices dui sapien. Aliquet enim tortor at auctor urna. Nisl vel pretium lectus quam id leo in vitae. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. In arcu cursus euismod quis viverra nibh. Quam vulputate dignissim suspendisse in. Morbi enim nunc faucibus a. Malesuada fames ac turpis egestas integer eget. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Aliquam vestibulum morbi blandit cursus risus at. Nibh tortor id aliquet lectus proin. Nec ultrices dui sapien eget mi proin. Amet purus gravida quis blandit turpis cursus in. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Nunc lobortis mattis aliquam faucibus. Tincidunt arcu non sodales neque sodales.
+  <p class="p-3 mb-2 bg-body-secondary">
+At KND Solutions, we are dedicated to providing cutting-edge solutions that empower businesses to thrive in the digital age. With a relentless commitment to excellence, we specialize in delivering tailored tech solutions that drive efficiency, foster growth, and transform the way organizations operate.<br><br>
+
+Our team comprises visionary experts with diverse skill sets, united by a passion for harnessing technology to solve complex challenges. From software development to cybersecurity, cloud solutions, and beyond, we offer a comprehensive suite of services that cater to the evolving needs of modern businesses across industries.<br><br>
+
+What sets us apart is our client-centric approach. We collaborate closely with each partner, understanding their unique objectives and challenges to craft bespoke strategies and implement solutions that align perfectly with their vision. Our focus on innovation and adaptability ensures that our clients stay ahead in an ever-evolving technological landscape.<br><br>
+
+Transparency, integrity, and a relentless pursuit of excellence define our work ethos. We strive not just to meet expectations but to exceed them, consistently delivering results that make a tangible difference for our clients.<br><br>
+
+At KND Solutions, we believe that technology should be an enabler, not a barrier. Our mission is to simplify complexities, catalyze growth, and empower businesses to reach new heights through the seamless integration of technology into their operations.<br><br>
+
+Join us on this transformative journey as we revolutionize businesses through unparalleled technological solutions.
   </p>
   
 
   <h2 class="text-center mt-2">Products Offerings</h2>
   
-  <p>TODO - Add Products</p>
+  <div>
+    {% for serv in service %}
+      {% include 'serviceitem.html' %}
+    {% endfor %}   
   
-  <button>Contact Us</button>
-    <p>Copyright 2023, KND Solutions</p>
+  </div>
+    
+  <div class="text-center">
+  <button class="btn btn-primary btn-lg">Contact Us</button>
+    <p class="mt-4">Copyright 2023, KND Solutions</p>
+  </div>
 </div>
   
 </body>
