@@ -17,16 +17,17 @@
   </style>
 </head>
 <body>
+  {% include 'nav.html' %}
   <div id="container">
   <div class="bg-dark-subtle text-emphasis-dark">
    <!-- <img src="static/background.jpg" align="left" height="60px">-->
-    <h1 class="text-center mt2">KND Solutions</h1>
+    
   <br>
     
   <img class="img-fluid" src="/static/background2.jpg" height="320" width="100%" object-fit="strech">
   <br>
   </div>
-  <h2 class="text-center mt-2">About KND Solutions</h2>
+  
   <br>
   
   <p class="p-3 mb-2 bg-body-secondary">
@@ -54,10 +55,10 @@ Join us on this transformative journey as we revolutionize businesses through un
   </div>
     
   <div class="text-center">
-  <button class="btn btn-primary btn-lg">Contact Us</button>
-    <p class="mt-4">Copyright 2023, KND Solutions</p>
+  <a href="mailto:chris.lipsey@kndsolutions.net?subject=Questions&body=Customer%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AQuestions%3F" class="btn btn-primary btn-lg">Contact Us</a>
+   
   </div>
 </div>
-  
+   {% include 'footer.html' %}
 </body>
 </html>
