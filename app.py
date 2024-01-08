@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
 
@@ -33,9 +33,7 @@ def KND():
 def list_services():
   return jsonify(SERVICES)
 
-@app.route("/")
-def about():
-    return render_template('about.html')
+
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
